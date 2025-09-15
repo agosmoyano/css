@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos CSS: Colores y fondos</title>
+    <style>
+        header {
+            /*Selector por etiiquetas*/
+            padding: 0px;
+            /*la distancia entre el borde y el contenido*/
+            border: 2px solid #507bf0;
+            /*tamaño del borde en px 
+            tipo de borde (solid) color*/
+            border-radius: 8px;
+            /*redondea los bordes */
+        }
+
+        /*Para seleccionar una clase de utiliza el . y
+        luego el nombre de la clase*/
+        .color-nombre {
+            color: aquamarine;
+        }
+
+        .color-hex {
+            color: #00ff00;
+            /*RGB (00 - ff) por canal*/
+        }
+
+        .color-rgb {
+            color: rgb(255, 0, 0);
+        }
+
+        .color-rgba {
+            color: rgba(255, 255, 0, 1);
+            /*El ultimo canal es la 
+            transparencia. Valor 0 (plena transparencia) valor 1,(pleno color)*/
+            background-color: blueviolet;
+        }
+
+        .caja {
+            padding: 10px;
+            border: 3px solid #507bf0;
+            border-radius: 8px;
+        }
+
+        .color-fondo {
+            background-color: rgb(80, 170, 255);
+        }
+        .imagen-fondo{
+            background-image:url("./assets/img/miko.jpg");
+            background-size: cover;
+        }
+        .imagen-fondo h2{
+            color: #08f100;
+        }
+        /*Selector por descendencia 
+        elegir el PADRE utilizando en este caso el
+        nombre de la clase aplicada.*/
+        .imagen-fondo p{
+            color: #ffbb00;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ejemplo 1:Colores de texto</h1>
+        <p class="color-nombre">Este texto usa la propiedad color.</p>
+        <p class="color-hex">Este texto usa codigo hexadecimal.</p>
+        <p class="color-rgb">Este texto usa valores RGB.</p>
+        <p class="color-rgba">Este texto usa valores RGBA para añadir transparencia.</p>
+    </header>
+    <main>
+        <section class="caja color-fondo">
+            <h2>Colores de fondos</h2>
+            <p>Contenedor con un color de fondo de tipo solida</p>
+        </section>
+        <section class="caja imagen-fondo">
+            <h2>Imagen de fondo</h2>
+            <p>Contenedor con una imagen de fondo. Utilizaremos 
+                la propiedad background-image</p>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
