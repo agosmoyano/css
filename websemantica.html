@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web semantica</title>
+    <link rel="stylesheet" href="basico.css">
+</head>
+
+<body>
+    <header>
+
+        <div><img src="./assets/img/miko.jpeg" alt="miko" width="150px"></div>
+        <h1>Young Miko</h1>
+        <h3>Desarrolladora y Cantante</h3>
+    </header>
+    <main>
+        <section>
+            <h1>Acerca de mi</h1>
+            <p>Soy una desarrolladora web con 6 años de experiencia en la creacion de interfaces
+                de usuarios atractivos y funcionales.<br> Me apasiona el diseño responsive y la
+                accesibilidad web. Disfruto mucho de la musica y tatuar.
+            </p>
+            <ul>
+                <li><span> Email:</span> miko@gmail.com</li>
+                <li><span> Ubicacion:</span>Brasil</li>
+                <li><span>Experiencia:</span>6 años</li>
+            </ul>
+
+        </section>
+
+        <section>
+            <form action="" method="post">
+                <h1>Contacto con Young Miko</h1>
+
+                <label for="Nombre">Nombre completo</label>
+                <div>
+                    <input type="text" name="Nombre" id="Nombre" placeholder="Escribe tu nombre completo" required>
+                </div>
+
+                <label for="Correo">Correo electronico</label>
+                <div>
+                    <input type="email" name="Correo" id="Correo" placeholder="miko@gmail.com">
+                </div>
+
+                <label for="Contraseña">Contraseña</label>
+                <div>
+                    <input type="password" name="Contraseña" id="Contraseña">
+                </div>
+
+                <label for="Telefono">Telefono</label>
+                <div><input type="text" name="Telefono" id="Telefono" placeholder="opcional"></div>
+
+                <label for="pais">pais</label>
+                <div>
+                    <select name="pais" id="pais">
+                        <option value="1">Argentina</option>
+                        <option value="2">Brasil</option>
+                    </select>
+                </div>
+
+
+                <label for="intereses">Intereses (opcional)</label>
+                <div><textarea id="intereses" rows="10" cols="40"
+                        placeholder="Cuentanos sobre tus intereses..."></textarea>
+                </div>
+
+                <input type="checkbox" name="condiciones" id="condiciones" required>
+                <label for="condiciones">Acepto terminos y condiciones</label>
+
+
+                <div class="Contenedor-btn">
+                    <button type="submit" class="btn" id="btn-contacto"> Contactar</button>
+                    <button class="btn" id="btn-portafolio">portafolio</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+</body>
+
+</html>

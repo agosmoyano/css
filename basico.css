@@ -1,0 +1,88 @@
+img {
+  border: 3px solid #4A2D74;
+  border-radius: 70px;
+}
+
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 110;
+  font-style: normal;
+}
+
+header {
+  border-bottom: 2px solid #391E49;
+  text-align: center;
+}
+
+/*main*/
+main{
+width: 700px; /*defino el ancho del main en px*/
+margin: 0 auto;/*margin son los margenes
+0 es aplicado al top y al bottom
+auto es automatico(ajuste) al left y al right*/
+background-color: #e3b3ff;
+border: 2px solid #391E49;
+border-radius: 4px;
+
+}
+/*selector por descendencia*/
+main ul{
+  list-style:none;
+  border: 2px solid #9B3CD0;
+  border-radius: 5px;
+  background-color: #d690ff;
+}
+
+main ul li{
+  border-bottom: 1px solid #391E49;
+  padding: 4px;
+}
+
+/*selector por descendencia*/
+main ul li span{ 
+  font-weight: 900;
+
+}
+
+
+
+
+
+
+/*Selector por type o clase*/
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+  background-color: #d690ff;
+  width: 90%;
+  border: 2px solid #cb70ff;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+
+
+/*Selector por clases*/
+.btn {
+  border: 2px solid #864ADE;
+  border-radius: 5px;
+  font-weight: 700px;
+  padding: 10px;
+}
+
+.Contenedor-btn {
+  border-top: 2px dashed #391E49;
+
+}
+
+/*Selector por id*/
+#btn-contacto {
+  background-color: #864ADE;
+
+}
+
+#btn-portafolio {
+  background-color: #9B3CD0;
+}
