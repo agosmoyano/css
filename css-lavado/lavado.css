@@ -1,0 +1,24 @@
+main {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+section {
+    width: 250px;
+}
+
+button{
+    border: 2px solid red;
+    background-color: red;
+    padding: 9px;
+}
+.contenedor-o{
+    padding-top: 20px;
+
+}
+
+#ofertas{
+    color: white;
+    
+}
